@@ -25,3 +25,9 @@ Sunday | 1.5h | Homework |
 * HTML5 tags
 * Semantic HTML
 * CSS Basics
+
+## Trello board
+
+[WebDev-2020](https://trello.com/b/39wTXoaY/webdev-2020)
+
+*Available only for team "Students".*
