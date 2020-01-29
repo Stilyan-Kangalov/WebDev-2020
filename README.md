@@ -17,12 +17,12 @@ Sunday | 1.5h | Homework |
 
 ### Content:
 * HTML Basics - elements, attributes, tags, images, links.
-* HTML Tables, Frames and Forms.
+* HTML Tables and Frames.
 
 ## Week 2
 
 ### Content:
-* HTML5 tags
+* HTML5 tags and Forms.
 * Semantic HTML
 * CSS Basics
 

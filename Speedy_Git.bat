@@ -40,7 +40,7 @@ IF "%option%"=="1" (
 ) ELSE IF "%option%"=="2" (
 	REM make new commit with your custom message
 	call git add .
-	call git commit -m "%msgline%"
+	call git commit -m "!msgline!"
 	call git push origin master
 	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
@@ -75,7 +75,7 @@ IF "%option%"=="1" (
     pause >nul
 ) ELSE IF "%option%"=="7" (
 	set /p "url=### Paste the URL from the original(forked) repo and press Enter:"
-    call git remote add upstream %url%
+    call git remote add upstream !url!
     echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
 	echo ### Great, everything went well! Press any key for exit.
