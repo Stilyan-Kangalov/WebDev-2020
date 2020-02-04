@@ -1,1 +1,24 @@
+.colour-blue {
+	color:#3367D6; 
+}
 
+.colour-red {
+	color:red;
+}
+
+.text-stl-bold {
+	font-weight:bold;
+}
+
+.text-stl-color-red {
+	color:red;
+}
+
+#pic {
+	float:right; 
+}
+
+#text {
+	float:left;
+	width:60%;
+}
