@@ -10,10 +10,6 @@ for /f "delims=" %%a in ('time/t') do @set mytime=%%a
 set currentTime=%mydate%%mytime%
 call git status
 echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
-echo.
-set /p "msgline=### Type message for your new commit:"
-echo.
 echo ### Choose to Push or Get ###
 echo   Available commands are:
 echo    1. Push with automated commit.
@@ -31,7 +27,7 @@ echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 IF "%option%"=="1" (
 	REM add all new files with auto-commit
 	call git add .
-	call git commit -a -m "Automated commit by Speedy_Git on %currentTime%"
+	call git commit -a -m "Automated commit by Speedy_Git on !currentTime!"
 	call git push origin master
 	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
@@ -39,6 +35,8 @@ IF "%option%"=="1" (
 	pause >nul
 ) ELSE IF "%option%"=="2" (
 	REM make new commit with your custom message
+	set /p "msgline=### Type message for your new commit:"
+    echo.
 	call git add .
 	call git commit -m "!msgline!"
 	call git push origin master
@@ -61,7 +59,7 @@ IF "%option%"=="1" (
 	echo ### Now press any key to update your forked repo at github.com
 	timeout /t -1
 	call git add .
-	call git commit -a -m "Automated commit by Speedy_Git on %currentTime%"
+	call git commit -a -m "Automated commit by Speedy_Git on !currentTime!"
 	call git push origin master
 	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
