@@ -27,7 +27,7 @@ echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 IF "%option%"=="1" (
 	REM add all new files with auto-commit
 	call git add .
-	call git commit -a -m "Automated commit by Speedy_Git on !currentTime!"
+	call git commit -a -m "Automated commit by Speedy_Git on %currentTime%"
 	call git push origin master
 	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
@@ -59,7 +59,7 @@ IF "%option%"=="1" (
 	echo ### Now press any key to update your forked repo at github.com
 	timeout /t -1
 	call git add .
-	call git commit -a -m "Automated commit by Speedy_Git on !currentTime!"
+	call git commit -a -m "Automated commit by Speedy_Git on %currentTime%"
 	call git push origin master
 	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
