@@ -58,6 +58,12 @@ IF "%option%"=="1" (
     echo ### All updates are in your upstream branch. Now, press any key to trigger the merge!
     timeout /t -1
     call git merge upstream/master
+	echo ### Now press any key to update your forked repo at github.com
+	timeout /t -1
+	call git add .
+	call git commit -a -m "Automated commit by Speedy_Git on %currentTime%"
+	call git push origin master
+	echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	echo.
 	echo ### Great, everything went well! Press any key for exit.
 	pause >nul
