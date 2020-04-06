@@ -1,24 +1,3 @@
-.colour-blue {
-	color:#3367D6; 
-}
+/* Here I write my own CSS code */
 
-.colour-red {
-	color:red;
-}
-
-.text-stl-bold {
-	font-weight:bold;
-}
-
-.text-stl-color-red {
-	color:red;
-}
-
-#pic {
-	float:right; 
-}
-
-#text {
-	float:left;
-	width:60%;
-}
+/* test line */
