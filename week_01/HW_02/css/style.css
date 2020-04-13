@@ -12,3 +12,31 @@ hr.line {
 	width: 50%;
 	border: 4px solid #cd0000;
 }
+
+table { width: 100%; margin-top: 8px; }
+
+#table-head {background-color: #a2b2c1; color: white;}
+
+tr#table-head th {
+    text-align: left;
+    padding: 2px 0 20px 5px;
+}
+
+.col1, .col2 { width: 210px; }
+
+.col3 { width: 110px; }
+
+tr:nth-child(even) {background: #e0e3e8;}
+tr:nth-child(odd) {background: #f1f2f4;}
+
+.row2, .row3 { height: 80px }
+
+td {
+    vertical-align: top;
+    padding: 2px 0 0 5px;
+}
+
+.row4-6 { height: 50px }
+.row5 { height: 110px }
+#third-line{margin-top: 20px}
+
